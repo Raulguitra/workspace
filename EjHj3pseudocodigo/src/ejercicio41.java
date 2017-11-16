@@ -8,16 +8,18 @@ public class ejercicio41 {
 		// TODO Auto-generated method stub
 		int colegio [][][] = new int [5][10][20];
 		int media [][] = new int [5][10];
-		int i, j, k;
-		int suma;
+		int centro, curso, alumnos;
+		int suma, centroMax, cursoMax;
 		int mediamax;
 
-		for (i=0; i<5; i++){
-			for (j=0; j<10; j++){
-				for(k=0; k<20; k++){
+		for (centro=0; centro<5; centro++){
+			System.out.print("\nCentro " + (centro + 1));
+			for (curso=0; curso<10; curso++){
+				System.out.printf("\nCurso: %2d", (curso + 1));
+				for(alumnos=0; alumnos<20; alumnos++){
 
-					colegio[i][j][k]=(int)Math.floor(Math.random()*10);
-					System.out.printf("%5d",colegio[i][j][k]);
+					colegio[centro][curso][alumnos]=(int)Math.floor(Math.random()*10);
+					System.out.printf("%5d",colegio[centro][curso][alumnos]);
 				}//for
 				System.out.printf("\n");
 			}//for
@@ -25,33 +27,33 @@ public class ejercicio41 {
 
 		}//for
 
-		for (i=0; i<5; i++){
-			for (j=0; j<10; j++){
+		for (centro=0; centro<5; centro++){
+			for (curso=0; curso<10; curso++){
 				suma=0;
-				for(k=0; k<20; k++){
-					suma += colegio[i][j][k];
+				for(alumnos=0; alumnos<20; alumnos++){
+					suma += colegio[centro][curso][alumnos];
 
 				}//for
 
-				media [i][j] = suma/20;
-				System.out.printf("%4d",media[i][j]);
+				media [centro][curso] = suma/20;
+				System.out.printf("%4d",media[centro][curso]);
 			}//for
 			System.out.printf("\n");
 		}//for
 		
 		System.out.println();
-		
-			
-		for (j=0; j<10; j++){
-			mediamax=0;
-			for(i=0; i<5; i++){
-				if(media[i][j]>mediamax){
-					mediamax=media[i][j];
-					System.out.printf("%4d", mediamax);
+		for (curso=0; curso<10; curso++){
+			mediamax=0;  centroMax = 0;
+			//System.out.println("\nMaximas notas en el curso " + (curso+1));
+			for(centro=0; centro<5; centro++){
+				if(media[centro][curso]>mediamax){
+					mediamax=media[centro][curso];
+					centroMax = centro;
+					//System.out.printf("%4d", mediamax);
 				}//if	
-			}//for
-			
+			}//for -- cambio de centro
+			System.out.printf("\nMedia maxima del curso %3d: %4d y esta en el centro %3d", (curso+1), mediamax, centroMax+1);
 		}//for
-
+			
 	}//main
 }//class
