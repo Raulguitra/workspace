@@ -4,7 +4,7 @@ producto y división.*/
 
 import java.util.*;
 
-public class Ejercicio2 {
+public class Ejercicio02 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
