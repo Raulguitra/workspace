@@ -1,5 +1,5 @@
-/*14) Se pide representar el algoritmo que nos calcule la suma de los N primeros números
-pares a partir de N (si N es par sería el primer número que hay que sumar). Es decir,
+/*14) Se pide representar el algoritmo que nos calcule la suma de los N primeros 
+números pares a partir de N (si N es par sería el primer número que hay que sumar). Es decir,
 si insertamos un 5, nos haga la suma de 6+8+10+12+14.*/
 
 import java.util.*;
