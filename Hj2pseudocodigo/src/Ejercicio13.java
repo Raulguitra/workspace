@@ -1,9 +1,9 @@
-/*10) Dado un numero n que filtraremos a que sea positivo, escribir un programa que nos
-diga cuál es el numero primo más cercano a él por debajo.*/
+/*13) Dado un numero n leído por teclado encontrar el numero p primo mas cercano a él
+por exceso.*/
 
 import java.util.*;
 
-public class Ejercicio10 {
+public class Ejercicio13 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -24,7 +24,7 @@ public class Ejercicio10 {
 		encontrado = false;
 		//while(!encontrado){
 		while(encontrado ==false ){//mientras no encuentre el numero primo
-			num = num - 1; //busco un numero menos
+			num = num + 1; //busco un numero mas
 			conta = 0;//contador de divisores
 			for(i=2; i<num; i++){// buscamos posibles divisores(menos el 1 y el propio numero)
 				if(num % i ==0){
@@ -34,7 +34,7 @@ public class Ejercicio10 {
 			}//end for
 			if(conta == 0){//es primo
 				encontrado = true;//ya lo he encontrado
-				System.out.println("el numero " + num + " es el mas cercano a " + n + " por debajo");
+				System.out.println("el numero " + num + " es el mas cercano a " + n + " por encima");
 			}//end if
 
 		}//end while
