@@ -1,5 +1,7 @@
-/*1) Crea una aplicación que nos calcule el área de un circulo, cuadrado o triangulo. Pediremos que figura queremos calcular su área y 
- * según lo introducido pedirá los valores necesarios para calcular el área. Crea un método por cada figura para calcular cada área, 
+/*1) Crea una aplicación que nos calcule el área de un circulo, cuadrado o triangulo. 
+Pediremos que figura queremos calcular su área y 
+ * según lo introducido pedirá los valores necesarios para calcular el área. 
+ * Crea un método por cada figura para calcular cada área, 
  * este devolverá un número real. Muestra el resultado por pantalla
  
 

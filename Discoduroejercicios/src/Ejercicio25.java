@@ -1,5 +1,7 @@
-/*25) Crea una aplicación llamada CalculadoraPolacaInversaApp, nos pedirá 2 operandos (int) y un signo aritmético (String), 
- * según este último se realizara la operación correspondiente. Al final mostrara el resultado en un cuadro de dialogo.
+/*25) Crea una aplicación llamada CalculadoraPolacaInversaApp, nos pedirá 2 operandos (int) 
+y un signo aritmético (String), 
+ * según este último se realizara la operación correspondiente. 
+ * Al final mostrara el resultado en un cuadro de dialogo.
 
 Los signos aritméticos disponibles son:
 

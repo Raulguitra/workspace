@@ -1,0 +1,34 @@
+package poker;
+import java.util.*;
+
+
+import java.util.Arrays;
+
+public class Poker {
+
+	public static void main(String[] args) {
+		String[] numero={"2♥","3♥","4♥","5♥","6♥","7♥","8♥","9♥","10♥","J♥","Q♥","K♥","A♥","2♦","3♦","4♦","5♦","6♦","7♦","8♦","9♦","10♦","J♦","Q♦","K♦","A♦","2♣","3♣","4♣","5♣","6♣","7♣","8♣","9♣","10♣","J♣","Q♣","K♣","A♣","2♠","3♠","4♠","5♠","6♠","7♠","8♠","9♠","10♠","J♠","Q♠","K♠","A♠"};
+		int [] numeros = new int [52];
+		int i,j;
+		int conta=1;
+
+		for (j = 0; j < 52; j++) {
+			System.out.println(numero[j]);
+			numeros[j]=conta;
+			conta++;
+		}
+		
+		Random r = new Random();
+		for (i = numeros.length; i > 0; i--) {
+			int posicion = r.nextInt(i);
+			int tmp = numeros[i - 1];
+			numeros[i - 1] = numeros[posicion];
+			numeros[posicion] = tmp;
+		}
+
+		
+		
+		
+	}//main
+	
+}//Class
