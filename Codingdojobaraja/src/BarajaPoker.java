@@ -23,6 +23,7 @@ public class BarajaPoker {
 		}
 		
 		//barajamos
+		
 		//cambiamos parejas de cartas al azar 50 veces
 		for(contador = 1; contador <= 50; contador++){
 			indice1 = (int)Math.floor(Math.random()*52); // numero al azar entre 0 y 51
